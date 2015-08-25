@@ -91,6 +91,8 @@ Alternatively, a nicer way of doing it is using the web interface, described nex
 Start a runtime
 
     $ csruntime --host localhost --controlport 5001 --port 5000 --keep-alive
+    
+`CTRL+Z` stops the current process, which can then be resumed as a background process using the command `bg`. 
 
 Start web server
 
