@@ -2,17 +2,10 @@
 
 ## What is this?
 
-Calvin is an application environment that lets things talk to things. It
-comprises of both a development framework for application developers, and a
-runtime environment that handles the running application. Calvin is based on
-the fundamental idea that application development should be simple and fun.
-There should be no unnecessary impediments between an idea and its
-implementation, and an app developer should not have to worry about
-communication protocols or hardware specifics (but will not stop you from
-doing it if you want to.)
+Calvin is an application environment that lets things talk to things. It comprises of both a development framework for application developers, and a runtime environment that handles the running application. Calvin is based on the fundamental idea that application development should be simple and fun.
+There should be no unnecessary impediments between an idea and its implementation, and an app developer should not have to worry about communication protocols or hardware specifics (but will not stop you from doing it if you want to.)
 
-See the [wiki](https://github.com/EricssonResearch/calvin-base/wiki) for more
-detailed information, or continue reading.
+See the [wiki](https://github.com/EricssonResearch/calvin-base/wiki) for more detailed information, or continue reading.
 
 ## New in this version
 
@@ -52,17 +45,12 @@ component DelayedCounter(delay) -> out {
 
 ### Download
 
-The latest version of Calvin can be found on [github](https://github.com/EricssonResearch/calvin-base).
+The latest version of Calvin can be found on [github](https://github.com/EricssonResearch/calvin-base), however in this coruse we will use a fork of that at https://github.com/MalmoUniversity-DA366A/calvin-base)
 
 ### Setup
 
-To install Calvin, use the accompanying `setup.py`
-
-    $ python setup.py install
-
-Alternatively, install the requirements using `pip`
-
-    $ pip install -r requirements.txt
+#### Install `pip` and `virtualenv`Check if `pip` is installed:       which pipshould list it. If not, use     sudo easy_install pip    to install it.Next, use `pip` to install `virtualenv`:     sudo pip install virtualenv**N.B.** From now on, _don't use sudo_ with you commands. #### Create a virtual environmentFirst create a location to store your virtual environments (I chose `~/.virtualenvs/`, use that or whatever suits your taste), then create a new virtual environment:    mkdir ~/.virtualenvs/    virtualenv ~/.virtualenvs/test-calvinActivate the new `test-calvin` environment    source ~/.virtualenvs/test-calvin/bin/activateand your prompt should change to indicate the activation by prepending `(test-calvin)` to whatever was there before. Use `deactivate` if you should want to leave the virtual environment. A good intro to using virtualenv can be found [here][3]#### Installing CalvinGo to a directory of your choice and clone calvin:     git clone https://github.com/MalmoUniversity-DA366A/calvin-base.git  This repo is a clone of the [official Ericsson repo][2].
+Step into `calvin-base` and use `pip` to install required packages and set up Calvin for development:     pip install -e .A quick check with `which csruntime` should return `~/.virtualenvs/test-calvin/bin/csruntime`. The beauty of `pip install -e .` is that you don't have to re-install calvin every time you change the code or pull update from github. See [this link][4] for more info on `pip` and `pip install -e .` (aka ["Editable Installs"][5]).
 
 To verify a working installation, try
 
@@ -178,7 +166,7 @@ The output should be identical to the earlier example.
 
 Several
 
-
+[1]: https://virtualenv.pypa.io/en/latest/[2]: https://github.com/EricssonResearch/calvin-base[3]: http://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python/[4]: https://pip.pypa.io/en/stable/index.html[5]: https://pip.pypa.io/en/stable/reference/pip_install.html#editable-installs
 
 
 
