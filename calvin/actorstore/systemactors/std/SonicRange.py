@@ -7,7 +7,7 @@ from calvin.actor.actor import Actor, ActionResult, manage, condition
 
 class SonicRange(Actor):
 	"""
-	orward a token unchanged
+	Forward a token unchanged
 	Inputs:
 		token : a token
 	Outputs
