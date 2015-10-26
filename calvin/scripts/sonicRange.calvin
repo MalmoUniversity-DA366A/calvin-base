@@ -1,0 +1,5 @@
+/*Actors*/
+src : std.SonicRange()
+snk : io.StandardOut()
+
+src.token > snk.token
