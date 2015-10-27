@@ -1,5 +1,5 @@
 /*Actors*/
-src : std.SonicRange()
+src : std.SonicRange(data="Sonic range actor",n=1)
 snk : io.StandardOut()
 
 src.token > snk.token
