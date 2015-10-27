@@ -1,0 +1,5 @@
+# myfirst.calvin
+source : std.Counter()
+output : io.StandardOut()
+
+source.integer > output.token

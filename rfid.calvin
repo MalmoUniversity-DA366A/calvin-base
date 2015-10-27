@@ -1,0 +1,5 @@
+# rfid.calvin
+source : std.ReaderRFID()
+output : io.StandardOut()
+
+source.integer > output.token
