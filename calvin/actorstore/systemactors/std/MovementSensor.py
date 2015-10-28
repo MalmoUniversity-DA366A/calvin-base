@@ -1,10 +1,10 @@
-# RFID actor for Calvin arduino
-#author: Daniel Nordahl
+# MovementSensor actor for Calvin arduino
+# Author: Daniel Nordahl
 
 from calvin.actor.actor import Actor, ActionResult, manage, condition
 
 
-class ReaderRFID(Actor):
+class MovementSensor(Actor):
     """
     Produce next integer in a sequence 1,2,3,...
     Outputs:
@@ -17,7 +17,7 @@ class ReaderRFID(Actor):
 
     @condition(action_output=['integer'])
     def cnt(self):
-        self.count += 1
+        self.count = 1
         return ActionResult(production=(self.count, ))
 
     action_priority = (cnt,)

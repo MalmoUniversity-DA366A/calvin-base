@@ -1,4 +1,5 @@
-# Sonic range actor
+# Sonic range actor for calvin arduino
+# Author: Daniel Nordahl
 
 from calvin.actor.actor import Actor, ActionResult, manage, condition, guard
 
