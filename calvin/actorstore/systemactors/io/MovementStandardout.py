@@ -21,7 +21,7 @@ from calvin.utilities.calvinlogger import get_logger
 _log = get_logger(__name__)
 
 
-class MovementStandardout(Actor):
+class MovementStandardOut(Actor):
     """
     Write tokens to standard output
     Input:

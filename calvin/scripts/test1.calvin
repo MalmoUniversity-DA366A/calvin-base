@@ -1,5 +1,5 @@
 /* Actors */
-src : std.CountTimer()
-snk : io.StandardOut()
+src : std.MovementSensor()
+snk : io.MovementStandardOut()
 /* Connections */
 src.integer > snk.token
