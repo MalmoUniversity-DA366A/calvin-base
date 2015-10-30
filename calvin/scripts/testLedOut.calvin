@@ -1,5 +1,5 @@
 /* Actors */
 src : std.RFID()
-snk : io.ledOut()
+snk : io.LEDStandardOut()
 /* Connections */
 src.integer > snk.token
